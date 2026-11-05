@@ -3,5 +3,5 @@ services:
     build: .
     image: richard-portfolio
     ports:
-      - "8086:80"
+      - "127.0.0.1:8086:80"
     restart: unless-stopped
