@@ -31,7 +31,7 @@ Puis ouvrir `http://localhost:8080`.
 docker compose up --build -d
 ```
 
-Le site est disponible sur `http://localhost:8080`.
+Le site est disponible sur `http://localhost:8086`.
 
 ```bash
 docker compose logs -f
