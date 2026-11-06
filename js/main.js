@@ -8,15 +8,37 @@
 
   year.textContent = new Date().getFullYear();
 
-  function setLanguage(nextLang) {
-    lang = nextLang;
-    document.documentElement.lang = lang;
-    document.documentElement.dataset.lang = lang;
+  function setMenuLabel() {
+    const open = menuToggle.classList.contains("active");
+    const key = open ? "aria.closeMenu" : "aria.openMenu";
+    const value = window.translations?.[lang]?.[key];
+    if (value) menuToggle.setAttribute("aria-label", value);
+  }
+
+  function applyTranslations() {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;
       const value = window.translations?.[lang]?.[key];
       if (value) el.textContent = value;
     });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      const key = el.dataset.i18nAriaLabel;
+      const value = window.translations?.[lang]?.[key];
+      if (value) el.setAttribute("aria-label", value);
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.dataset.i18nAlt;
+      const value = window.translations?.[lang]?.[key];
+      if (value) el.setAttribute("alt", value);
+    });
+  }
+
+  function setLanguage(nextLang) {
+    lang = nextLang;
+    document.documentElement.lang = lang;
+    document.documentElement.dataset.lang = lang;
+    applyTranslations();
+    setMenuLabel();
     langSwitch.textContent = lang === "fr" ? "EN" : "FR";
     localStorage.setItem("portfolio-lang", lang);
   }
@@ -31,6 +53,7 @@
     menuToggle.classList.remove("active");
     menuToggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
+    setMenuLabel();
   };
 
   menuToggle.addEventListener("click", () => {
@@ -38,6 +61,7 @@
     menuToggle.classList.toggle("active", open);
     menuToggle.setAttribute("aria-expanded", String(open));
     document.body.classList.toggle("menu-open", open);
+    setMenuLabel();
   });
   navLinks
     .querySelectorAll("a")

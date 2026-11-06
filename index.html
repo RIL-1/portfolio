@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Portfolio de Richard Labité, ingénieur développeur et ingénieur DevOps | Backend, CI/CD, systèmes distribués, observabilité et IA." />
+    content="Portfolio de Richard Labité, développeur backend et DevOps | Java, Node.js, CI/CD, systèmes distribués, observabilité et IA." />
   <meta name="author" content="Richard Labité" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Richard Labité - Ingénieur Développeur / DevOps" />
+  <meta property="og:title" content="Richard Labité - Développeur Backend Java / Node.js - DevOps" />
   <meta property="og:description"
-    content="Backend, DevOps, DevSecOps et IA. Découvrez les projets, compétences et expériences de Richard Labité." />
+    content="Backend Java/Node.js, DevOps et IA. Découvrez les projets, compétences et expériences de Richard Labité." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://richard.opportys.com/" />
   <meta property="og:image" content="https://richard.opportys.com/assets/images/og-cover.svg" />
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-  <title>Richard Labité - Ingénieur Développeur / DevOps</title>
+  <title>Richard Labité - Développeur Backend Java / Node.js - DevOps</title>
 
   <script type="application/ld+json">
   {
@@ -38,7 +38,7 @@
       "https://github.com/RIL-1/",
       "https://www.linkedin.com/in/richard-labite/"
     ],
-    "jobTitle": "Ingénieur Développeur / Ingénieur DevOps",
+    "jobTitle": "Développeur Backend Java / Node.js - DevOps",
     "knowsAbout": ["Backend", "DevOps", "DevSecOps", "CI/CD", "Docker", "Kafka", "Linux", "Artificial Intelligence"]
   }
   </script>
@@ -48,8 +48,8 @@
   <div class="page-grid" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Navigation principale">
-      <a href="#home" class="brand" aria-label="Richard Labité, accueil">
+    <nav class="nav container" aria-label="Navigation principale" data-i18n-aria-label="aria.mainNav">
+      <a href="#home" class="brand" aria-label="Richard Labité, accueil" data-i18n-aria-label="aria.brandHome">
         <span class="brand-mark">RL</span>
         <span class="brand-name">Richard Labité</span>
       </a>
@@ -61,11 +61,14 @@
         <a href="#projects" data-i18n="nav.projects">Projets</a>
         <a href="#experience" data-i18n="nav.experience">Expérience</a>
         <a href="#education" data-i18n="nav.education">Formation</a>
+        <a href="#languages" data-i18n="nav.languages">Langues</a>
+        <a href="#interests" data-i18n="nav.interests">Intérêts</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
 
       <div class="nav-actions">
-        <button class="lang-switch" id="langSwitch" aria-label="Changer de langue">EN</button>
+        <button class="lang-switch" id="langSwitch" aria-label="Changer de langue"
+          data-i18n-aria-label="aria.changeLanguage">EN</button>
         <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -87,14 +90,16 @@
             <span data-i18n="hero.namePrefix">Je suis</span>
             <span class="hero-name">Richard Labité</span>.
           </h1>
-          <p class="hero-role" data-i18n="hero.role">Ingénieur Développeur / Ingénieur DevOps</p>
+          <p class="hero-role" data-i18n="hero.role">Développeur Backend Java / Node.js - DevOps</p>
           <p class="hero-lead" data-i18n="hero.lead">
-            Étudiant en Master 1 Ingénierie Logicielle à l'ISTIC (Université de Rennes).
-            Je construis des applications backend, des pipelines CI/CD et des systèmes distribués,
-            avec un intérêt pour l'observabilité.
+            Développeur backend en Master 1 Ingénierie Logicielle, avec des expériences en développement logiciel.
+            J'interviens de la conception au déploiement : Java, Node.js/TypeScript, Docker, Kafka, PostgreSQL et CI/CD.
+            Je recherche un stage de 4 mois à partir de mai 2027 pour contribuer à des projets. Mobilité : Bretagne ou
+            reste de la France (télétravail).
           </p>
 
-          <div class="hero-values-line" aria-label="Valeurs professionnelles">
+          <div class="hero-values-line" aria-label="Valeurs professionnelles"
+            data-i18n-aria-label="aria.professionalValues">
             <span data-i18n="hero.value1">Adaptabilité</span>
             <span data-i18n="hero.value2">Curiosité</span>
             <span data-i18n="hero.value3">Communication</span>
@@ -110,16 +115,18 @@
               rel="noreferrer">LinkedIn ↗</a>
           </div>
 
-          <div class="hero-stack" aria-label="Technologies principales">
+          <div class="hero-stack" aria-label="Technologies principales"
+            data-i18n-aria-label="aria.coreTechnologies">
             <span>Java</span><span>Node.js</span><span>Docker</span><span>Kafka</span><span>Linux</span><span>CI/CD</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Portrait de Richard Labité">
+        <div class="hero-visual reveal" aria-label="Portrait de Richard Labité"
+          data-i18n-aria-label="aria.portrait">
           <div class="portrait-shell">
             <div class="portrait-placeholder">
               <img class="portrait-photo" src="assets/images/richard-labite.jpg"
-                alt="Portrait de Richard Labité" onerror="this.remove()" />
+                alt="Portrait de Richard Labité" data-i18n-alt="aria.portrait" onerror="this.remove()" />
               <span>RL</span>
             </div>
           </div>
@@ -146,7 +153,7 @@
             comprendre les systèmes, relever des défis techniques et progresser dans des environnements collaboratifs.
             Je recherche actuellement un stage de 4 mois en ingénierie logicielle ou DevOps à partir de mai 2027.</p>
           <div class="about-stats">
-            <div><strong>3+</strong><span data-i18n="about.stat1">expériences techniques</span></div>
+            <div><strong>4</strong><span data-i18n="about.stat1">expériences professionnelles</span></div>
             <div><strong>10+</strong><span data-i18n="about.stat2">technologies backend & data</span></div>
             <div><strong>FR / EN</strong><span data-i18n="about.stat3">portfolio bilingue</span></div>
           </div>
@@ -169,8 +176,15 @@
             <div class="skill-icon">&lt;/&gt;</div>
             <h3 data-i18n="expertise.softwareTitle">Développement logiciel</h3>
             <p data-i18n="expertise.software">Conception d'API, logique métier et interfaces</p>
-            <div class="tags"><span>Java</span><span>Spring
-                Boot</span><span>Node.js</span><span>TypeScript</span><span>PHP</span><span>Symfony</span><span>Laravel</span><span>Angular</span>
+            <div class="tags">
+              <span>Java</span>
+              <span>C/C++ <span class="tag-level" data-i18n="tags.knowledge">connaissance</span></span>
+              <span>Spring Boot <span class="tag-level" data-i18n="tags.beginner">débutant</span></span>
+              <span>Node.js</span>
+              <span>PHP</span>
+              <span>TypeScript</span>
+              <span>NestJS</span>
+              <span>Angular</span>
             </div>
           </article>
 
@@ -178,15 +192,29 @@
             <div class="skill-icon">∞</div>
             <h3 data-i18n="expertise.devopsTitle">DevOps & Infrastructure</h3>
             <p data-i18n="expertise.devops">Industrialisation, livraison continue et exploitation Linux.</p>
-            <div class="tags"><span>Docker</span><span>Linux</span><span>Nginx</span><span>GitHub
-                Actions</span><span>GitLab CI/CD</span><span>Jenkins</span></div>
+            <div class="tags">
+              <span>Docker</span>
+              <span>Linux</span>
+              <span>Nginx</span>
+              <span>GitHub Actions</span>
+              <span>GitLab CI/CD <span class="tag-level" data-i18n="tags.experimentation">expérimentation</span></span>
+              <span>Jenkins <span class="tag-level" data-i18n="tags.experimentation">expérimentation</span></span>
+            </div>
           </article>
 
           <article class="skill-card reveal">
             <div class="skill-icon">◎</div>
             <h3 data-i18n="expertise.qualityTitle">Observabilité & Qualité</h3>
             <p data-i18n="expertise.quality">Mesure, qualité et visibilité sur le comportement des applications.</p>
-            <div class="tags"><span>SonarQube</span><span>Sentry</span><span>Prometheus · <span data-i18n="tags.beginner">débutant</span></span><span>Grafana · <span data-i18n="tags.beginner">débutant</span></span><span>JUnit</span><span>PHPUnit</span><span>Postman</span></div>
+            <div class="tags">
+              <span>SonarQube</span>
+              <span>Sentry</span>
+              <span>Prometheus <span class="tag-level" data-i18n="tags.beginner">débutant</span></span>
+              <span>Grafana <span class="tag-level" data-i18n="tags.beginner">débutant</span></span>
+              <span>JUnit</span>
+              <span>PHPUnit</span>
+              <span>Postman</span>
+            </div>
           </article>
 
           <article class="skill-card reveal">
@@ -194,16 +222,22 @@
             <h3 data-i18n="expertise.dataTitle">Bases de données & Systèmes distribués</h3>
             <p data-i18n="expertise.data">Messaging, bases de données et traitements asynchrones.</p>
             <div class="tags">
-              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>Kafka</span><span>ClickHouse</span><span>CockroachDB</span><span>BullJS</span>
+              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB <span class="tag-level" data-i18n="tags.beginner">débutant</span></span><span>Redis</span><span>Kafka</span><span>ClickHouse</span>
+              <span>Typesense</span>
+              <span>BullJS</span>
             </div>
           </article>
 
           <article class="skill-card reveal">
             <div class="skill-icon">AI</div>
-            <h3 data-i18n="expertise.aiTitle">IA & Data</h3>
+            <h3 data-i18n="expertise.aiTitle">IA (expérimentation)</h3>
             <p data-i18n="expertise.ai">Expérimentation et intégration d'IA dans des outils et produits.</p>
-            <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>OpenAI
-                API</span><span>LangChain</span><span>Machine Learning</span></div>
+            <div class="tags">
+              <span>Python</span>
+              <span>OpenAI API</span>
+              <span>LangChain</span>
+              <span>Machine Learning</span>
+            </div>
           </article>
 
           <article class="skill-card reveal">
@@ -237,17 +271,19 @@
               <span class="toggle-icon">-</span>
             </button>
             <div class="timeline-body open">
-              <ul>
-                <li data-i18n="experience.innov1">Développement et évolution de fonctionnalités Laravel, Livewire et
-                  Filament, avec intégration d'API.</li>
-                <li data-i18n="experience.innov2">Fiabilisation de tests, création de stubs et refactorisation de
-                  webhooks avec contrôle d'idempotence.</li>
-                <li data-i18n="experience.innov3">Création et refonte d'écrans de dashboard, harmonisation de KPI et
-                  correction d'incohérences de données.</li>
-              </ul>
-              <div class="tags">
-                <span>PHP</span><span>Laravel</span><span>Livewire</span><span>Filament</span><span>PHPUnit</span><span>REST
-                  API</span>
+              <div class="timeline-body-inner">
+                <ul>
+                  <li data-i18n="experience.innov1">Développement et évolution de fonctionnalités Laravel, Livewire et
+                    Filament, avec intégration d'API.</li>
+                  <li data-i18n="experience.innov2">Fiabilisation de tests, création de stubs et refactorisation de
+                    webhooks avec contrôle d'idempotence.</li>
+                  <li data-i18n="experience.innov3">Création et refonte d'écrans de dashboard, harmonisation de KPI et
+                    correction d'incohérences de données.</li>
+                </ul>
+                <div class="tags">
+                  <span>PHP</span><span>Laravel</span><span>Livewire</span><span>Filament</span><span>PHPUnit</span><span>REST
+                    API</span>
+                </div>
               </div>
             </div>
           </article>
@@ -256,21 +292,27 @@
             <button class="timeline-head" aria-expanded="false">
               <div><span class="timeline-date">05/2024 - 08/2025 · Cotonou</span>
                 <h3>BEEWTON IT</h3>
-                <p data-i18n="experience.beewtonRole">Chef de projet technico-fonctionnel / Développeur</p>
+                <p data-i18n="experience.beewtonRole">Chef de projet technico-fonctionnel / Développeur backend</p>
               </div>
               <span class="toggle-icon">-</span>
             </button>
             <div class="timeline-body open">
-              <ul>
-                <li data-i18n="experience.beewton1">Analyse des besoins, règles métier et spécifications fonctionnelles
-                  et techniques pour Holitime.</li>
-                <li data-i18n="experience.beewton2">Participation à l'architecture applicative et coordination d'une
-                  équipe pluridisciplinaire de 5+ personnes.</li>
-                <li data-i18n="experience.beewton3">Animation Agile, organisation des recettes et contribution
-                  ponctuelle au développement.</li>
-              </ul>
-              <div class="tags">
-                <span>Symfony</span><span>CockroachDB</span><span>Typesense</span><span>Docker</span><span>Sentry</span><span>Postman</span>
+              <div class="timeline-body-inner">
+                <p class="timeline-product" data-i18n="experience.beewtonProduct">Produit : Holitime.org, SaaS française
+                  dédiée au bien-être naturel.</p>
+                <ul>
+                  <li data-i18n="experience.beewton1">Analyse des besoins métier et rédaction des spécifications
+                    fonctionnelles et techniques.</li>
+                  <li data-i18n="experience.beewton2">Contribution aux choix d'architecture de l'application avec le
+                    lead développeur.</li>
+                  <li data-i18n="experience.beewton3">Coordination d'une équipe pluridisciplinaire de plus de 5
+                    personnes.</li>
+                  <li data-i18n="experience.beewton4">Animation du suivi Agile, organisation des recettes et
+                    contribution au développement backend.</li>
+                </ul>
+                <div class="tags">
+                  <span>Symfony</span><span>CockroachDB</span><span>Typesense</span><span>Docker</span><span>Sentry</span><span>Postman</span>
+                </div>
               </div>
             </div>
           </article>
@@ -284,41 +326,44 @@
               <span class="toggle-icon">-</span>
             </button>
             <div class="timeline-body open">
-              <ul>
-                <li data-i18n="experience.kam1">Installation et déploiement d'une infrastructure VoIP Asterisk
-                  interconnectée à un
-                  opérateur local.</li>
-                <li data-i18n="experience.kam2">Backend de messagerie instantanée, messages programmés et
-                  traitements différés avec Redis/BullJS.</li>
-                <li data-i18n="experience.kam3">Migration de code legacy vers Node.js/Kafka et contribution à un
-                  pipeline ETL fichiers vers ClickHouse.</li>
-              </ul>
-              <div class="tags">
-                <span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Kafka</span><span>Asterisk</span><span>ClickHouse</span><span>GitLab
-                  CI/CD</span>
+              <div class="timeline-body-inner">
+                <ul>
+                  <li data-i18n="experience.kam1">Installation et déploiement d'une infrastructure VoIP Asterisk
+                    interconnectée à un opérateur local.</li>
+                  <li data-i18n="experience.kam2">Backend de messagerie instantanée, messages programmés et
+                    traitements différés avec Redis/BullJS.</li>
+                  <li data-i18n="experience.kam3">Migration de code legacy vers Node.js/Kafka et contribution à un
+                    pipeline ETL fichiers vers ClickHouse.</li>
+                </ul>
+                <div class="tags">
+                  <span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Kafka</span><span>Asterisk</span><span>ClickHouse</span><span>GitLab
+                    CI/CD</span>
+                </div>
               </div>
             </div>
           </article>
 
           <article class="timeline-item reveal">
             <button class="timeline-head" aria-expanded="false">
-              <div><span class="timeline-date">07/2021 - 12/2023 · Abomey-Calavi</span>
+              <div><span class="timeline-date">07/2021 - 12/2022 · Abomey-Calavi</span>
                 <h3>AbuzWeb</h3>
                 <p data-i18n="experience.abuzRole">Développeur web</p>
               </div>
               <span class="toggle-icon">-</span>
             </button>
             <div class="timeline-body open">
-              <ul>
-                <li data-i18n="experience.abuz1">Analyse des besoins et conception de solutions web adaptées aux
-                  objectifs fonctionnels et techniques des projets.</li>
-                <li data-i18n="experience.abuz2">Développement et évolution de projets web internes, notamment
-                  EcrisText, Offreducoin et AbuzSavoir.</li>
-                <li data-i18n="experience.abuz3">Conception et développement de projets web externes, dont Express
-                  Tourisme Bénin, de l'analyse du besoin jusqu'à la mise en ligne.</li>
-              </ul>
-              <div class="tags">
-                <span>PHP</span><span>Symfony</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span><span>Git</span>
+              <div class="timeline-body-inner">
+                <ul>
+                  <li data-i18n="experience.abuz1">Analyse des besoins et conception de solutions web adaptées aux
+                    objectifs fonctionnels et techniques des projets.</li>
+                  <li data-i18n="experience.abuz2">Développement et évolution de projets web internes, notamment
+                    EcrisText, Offreducoin et AbuzSavoir.</li>
+                  <li data-i18n="experience.abuz3">Conception et développement de projets web externes, dont Express
+                    Tourisme Bénin, de l'analyse du besoin jusqu'à la mise en ligne.</li>
+                </ul>
+                <div class="tags">
+                  <span>PHP</span><span>Symfony</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span><span>Git</span>
+                </div>
               </div>
             </div>
           </article>
@@ -338,7 +383,8 @@
           <article class="project-card featured reveal">
             <div class="project-number">01</div>
             <div class="project-content">
-              <div class="project-meta"><span>Systems Engineering</span><span data-i18n="projects.statusOngoing">En cours</span></div>
+              <div class="project-meta"><span data-i18n="projects.shiftContext">Projet académique ·
+                  Systems Engineering</span><span data-i18n="projects.statusOngoing">En cours</span></div>
               <h3 data-i18n="projects.shiftTitle">SHIFT - réduire le relais de payloads</h3>
               <p data-i18n="projects.shift">Prototype Linux visant à réduire le relais inutile de payloads entre
                 services REST exécutés sur un même serveur, avec séparation control path / data path et transfert de
@@ -406,10 +452,55 @@
       </div>
     </section>
 
+    <section class="section" id="languages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">06</span>
+          <h2 class="eyebrow" data-i18n="languages.eyebrow">Langues</h2>
+          <h3 data-i18n="languages.title">Français et anglais technique.</h3>
+        </div>
+        <div class="languages-grid">
+          <article class="language-card reveal">
+            <span>FR</span>
+            <h3 data-i18n="languages.french">Français</h3>
+            <p data-i18n="languages.frenchNote">Langue maternelle</p>
+          </article>
+          <article class="language-card reveal">
+            <span>EN</span>
+            <h3 data-i18n="languages.english">Anglais</h3>
+            <p data-i18n="languages.englishNote">Technique</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="interests">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">07</span>
+          <h2 class="eyebrow" data-i18n="interests.eyebrow">Centres d'intérêt</h2>
+          <h3 data-i18n="interests.title">IA, sport et engagement.</h3>
+        </div>
+        <div class="interests-grid">
+          <article class="interest-card reveal">
+            <h3 data-i18n="interests.ai">IA et automatisation</h3>
+            <p data-i18n="interests.aiNote">Mineure IA en L3 Informatique</p>
+          </article>
+          <article class="interest-card reveal">
+            <h3 data-i18n="interests.volunteering">Bénévolat</h3>
+          </article>
+          <article class="interest-card reveal">
+            <h3 data-i18n="interests.football">Football</h3>
+            <p data-i18n="interests.footballNote">Pratique en équipe</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
         <div class="section-heading reveal">
-          <span class="section-index">06</span>
+          <span class="section-index">08</span>
           <h2 class="eyebrow" data-i18n="contact.eyebrow">Contact</h2>
           <h3 data-i18n="contact.title">Un stage ou un projet à partir de mai 2027 ?</h3>
           <p class="section-intro" data-i18n="contact.intro">Je recherche un stage de 4 mois en développement logiciel
@@ -445,7 +536,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div><strong>Richard Labité</strong><span data-i18n="footer.role">Ingénieur Développeur / DevOps</span></div>
+      <div><strong>Richard Labité</strong><span data-i18n="footer.role">Développeur Backend Java / Node.js - DevOps</span></div>
       <p>© <span id="year"></span> Richard Labité. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
       <a href="#top" data-i18n="footer.top">Retour en haut ↑</a>
     </div>

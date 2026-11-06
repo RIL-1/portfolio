@@ -76,6 +76,12 @@
   }
   .nav-links {
     inset: 70px 0 0;
+    gap: 14px;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  .nav-links a {
+    font-size: 1.3rem;
   }
   .brand-name {
     display: none;
@@ -101,6 +107,8 @@
   }
   .skills-grid,
   .education-grid,
+  .languages-grid,
+  .interests-grid,
   .form-row {
     grid-template-columns: 1fr;
   }
