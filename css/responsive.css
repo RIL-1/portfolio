@@ -68,9 +68,6 @@
   .container {
     width: min(calc(100% - 28px), var(--container));
   }
-  .section {
-    padding: 86px 0;
-  }
   .nav {
     height: 70px;
   }
